@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="board">
+        <div class="container">
+            <form id="todo-form">
+                <input type="text" id="todo-input" placeholder="New TODO...">
+                <button type="submit">Add +</button>
+            </form>
+            <div class="lanes">
+                <div class="swim-lane" id="todo-lane">
+                    <h3 class="heading">TODO</h3>
+                    <p class="task" draggable="true">Get groceries</p>
+                    <p class="task" draggable="true">Feed the dogs</p>
+                    <p class="task" draggable="true">Mow the lawn</p>
+                </div>
+                <div class="swim-lane" id="todo-lane">
+                    <h3 class="heading">DOING</h3>
+                    <p class="task" draggable="true">Lorem ipsum dolor sit amet consectetur!</p>
+                </div>
+                <div class="swim-lane" id="todo-lane">
+                    <h3 class="heading">DONE</h3>
+                    <p class="task" draggable="true"> Consectetur minima assumenda saepe ipsa dolore natus non placeat
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./drag.js"></script>
+    <script src="./todo.js"></script>
+</body>
+
+</html>
